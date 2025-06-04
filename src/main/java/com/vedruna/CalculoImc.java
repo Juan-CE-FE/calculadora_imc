@@ -7,15 +7,19 @@ public class CalculoImc {
     public void calculo() {
         Scanner scanner = new Scanner(System.in);
 
+        // El usuario introduce su peso y su altura
         System.out.print("Ingrese su peso en kg: ");
         double peso = scanner.nextDouble();
 
         System.out.print("Ingrese su altura en metros: ");
         double altura = scanner.nextDouble();
 
+        // Formula para calcular el Indice de masa corporal
         double imc = peso / (altura * altura);
 
         System.out.println("Su IMC es: " + imc);
+
+        // Diferentes clasificaciones para si el peso esta por encima, por debajo o en lo normal.
 
         if (imc < 18.5) {
             System.out.println("Clasificación: Bajo peso");
