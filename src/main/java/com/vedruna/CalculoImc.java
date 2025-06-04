@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CalculoImc {
 
-    public void calculo() {
+    public double calculo() {
         Scanner scanner = new Scanner(System.in);
 
         // El usuario introduce su peso y su altura
@@ -19,7 +19,13 @@ public class CalculoImc {
 
         System.out.println("Su IMC es: " + imc);
 
-        // Diferentes clasificaciones para si el peso esta por encima, por debajo o en lo normal.
+        return imc;
+
+    }
+
+    public void clasificacion(double imc) {
+
+        // Diferentes clasificaciones para saber si el peso esta por encima, por debajo o en lo normal.
 
         if (imc < 18.5) {
             System.out.println("Clasificación: Bajo peso");

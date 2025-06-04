@@ -4,7 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         CalculoImc calc = new CalculoImc();
-        calc.calculo();
+        double imc = calc.calculo();
+        calc.clasificacion(imc);
 
     }
 }
