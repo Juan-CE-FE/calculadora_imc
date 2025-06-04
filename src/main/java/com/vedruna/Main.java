@@ -2,6 +2,9 @@ package com.vedruna;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        CalculoImc calc = new CalculoImc();
+        calc.calculo();
+
     }
 }
